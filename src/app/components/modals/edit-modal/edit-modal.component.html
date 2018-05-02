@@ -1,0 +1,69 @@
+<button type="submit" class="btn btn-primary float-left" data-toggle="modal" data-target="#editStudent" >Edit Student</button>
+<!-- Modal -->
+<div class="modal fade" id="editStudent" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editModalLabel">Edit Student</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Firstname</label>
+            <div class="col-sm-10">
+              <input class="form-control" [(ngModel)]="editData.firstName" name="firstName" type="text" placeholder="Firstname" id="example-email-input">
+            </div>
+          </div>
+
+            <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Lastname</label>
+            <div class="col-sm-10">
+              <input class="form-control" [(ngModel)]="editData.lastName" name="lastName" type="text" placeholder="Lastname" id="example-email-input">
+            </div>
+          </div>
+
+            <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Username</label>
+            <div class="col-sm-10">
+              <input class="form-control" [(ngModel)]="editData.username" name="username" type="text" placeholder="Username" id="example-email-input">
+            </div>
+          </div>
+
+            <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Age</label>
+            <div class="col-sm-10">
+              <input class="form-control" [(ngModel)]="editData.age" name="age" type="text" placeholder="Age" id="example-email-input">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Phone</label>
+            <div class="col-sm-10">
+              <input class="form-control" [(ngModel)]="editData.phone" name="phone" type="text" placeholder="Phone" id="example-email-input">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Emergency No</label>
+            <div class="col-sm-10">
+              <input class="form-control" [(ngModel)]="editData.emergencyNo" name="emergencyNo" type="text" placeholder="Emergency" id="example-email-input">
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Fee</label>
+            <div class="col-sm-10">
+              <input class="form-control" [(ngModel)]="editData.fee" name="fee" type="text" placeholder="Fee" id="example-email-input">
+            </div>
+          </div>
+          
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" (click)="editStudent( student )">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
